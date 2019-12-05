@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Matt Illies Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" />
+    <link rel="stylesheet" href="style.css" type="text/css"/>
+</head>
+<body>
+    <div class="displaywrap">
+        <div id="particles-js" class="particles"></div>
+        <div class="displaytext">
+            Hello, my name is <span class="name ui red">Matt Illies</span>and I like to build web apps.
+            <div class="startbutton">
+            <a href="#projects"><button class="initiatebutton ui inverted red button">Check for yourself!</button></a>
+            </div>            
+        </div>
+    </div>
+
+
+    <nav id="main">
+        <ul>
+            <li><a href="#top" class="active item">Home</a></li>
+            <li><a href="#about" class="item">About</a></li>
+            <li><a href="#projects" class="item">Projects</a></li>
+            <li><a href="#contact" class="item">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="aboutwrap" id="about">
+        <p class="about title">ABOUT</p>
+        <div class="container">
+            <div class="abouttext">
+                <img src="./imgs/profile.jpg" alt="Me" class="ui circular image profilepic"/>
+                <p class="abouttext">
+                    I am a Front-End focused developer from Rochester, MN.
+                    <br/>
+                    I prioritize responsive, dynamic, and exciting
+                    <br/> 
+                    web-applications, without sacrificing speed. 
+                    <br/>
+                    Contact me below and lets build an experience!
+                </p>
+            </div>
+            <div class="vl"></div>
+            <div class="textcontainer">
+                <ul class="skillslist">
+                    <li class="skill">HTML</li>
+                    <li class="skill">CSS</li>
+                    <li class="skill">JavaScript</li>
+                    <li class="skill">React</li>
+                    <li class="skill">Node.js</li>
+                    <li class="skill">SQL/Postgres</li>
+                </ul>
+                <ul class="skillsicons">
+                    <li><img src="./imgs/html5-3384014_1280.png" class="htmlicon"/></li>
+                    <li><img src="./imgs/logo-2582747_1280.png" class="cssicon"/></li>
+                    <li><img src="./imgs/javascript-736400_1280.png" class="jsicon"/></li>
+                    <li><img src="./imgs/iconfinder_React.js_logo_1174949.png" class="reacticon"/></li>
+                    <li><img src="./imgs/node-js-736399_1280.png" class="nodeicon"/></li>
+                    <li><img src="./imgs/pngguru.com.png" class="sqlicon"/></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <p class="projecttitle title" id="projects">PROJECTS</p>
+    <div class="projectswrap">
+        <div class="panels">
+            <div class="panel panel1">
+                <p class="paneltitle">Quizzical: Pure JavaScript</p>
+                <a href="https://millies1919.github.io/Quizzical/" target="_blank"><p></p></a>
+                <p class="paneldescription">A quiz app utlizing API calls and DOM manipulation.
+                </p>
+            </div>
+            <div class="panel panel2">
+                <p class="paneltitle">Streamy: React/Redux</p>
+                <p></p>
+                <p class="paneldescription">A Twitch.tv remake, using Google OAuth2 for user authentification.
+                    <br>
+                    Redux is used for state management.
+                </p>
+            </div>   
+            <div class="panel panel3">
+                <p class="paneltitle">Face Recognition: React/Node.js/Express.js/PostgreSQL</p>
+                <p></p>
+                <p class="paneldescription">This app uses a face regonition API to determine the 
+                    <br>
+                    location of faces in pictures and places a box around them.
+                    <br>
+                    User authentication is done using a Node.js and PostgreSQL database.
+                </p>
+            </div>
+            <div class="panel panel4">
+                <p class="paneltitle">Battle Monitor: React</p>
+                <p></p>
+                <p class="paneldescription">An app to build Pokemon teams and determine weaknesses in those teams.
+                <br>
+                
+                </p>
+        </div>
+    </div>
+    <p class="projectstext">
+        I focus on projects that can exemplify different aspects of JavaScript and show off the new tools, methods and techniques I've learned.
+        <br>
+        Check back every so often to see what I am up to or have made!
+    </p>
+    <div class="contactwrap" id="contact">
+        <svg preserveAspectRatio="none" viewBox="0 0 100 102" height="75" width="100%" version="1.1" xmlns="http://www.w3.org/2000/svg" class="svgcolor-light">
+                <path d="M0 0 L50 100 L100 0 Z" fill="white" stroke="white"></path>
+        </svg>
+        <path d="M0 0 L50 100 L100 0 Z" fill="white" stroke="white"></path>
+        <p class="contacttitle title">CONTACT</p>
+        <p class="contactinfo">
+            If you want to get ahold of me or collaborate use the methods below!
+            <br>
+            <br>
+            <span><img class="icon" src="./imgs/email-icon-1024x1024.png"> </span> mattillies.webbie@gmail.com
+            <br>
+            <span><img class="icon" src="./imgs/iconfinder_Popular_Social_Media-22_2329259.png"></span> https://www.linkedin.com/in/matthew-canoy-illies-79b58318b/
+            <br>
+            <span><img class="icon" src="./imgs/code+collaboration+github+network+round+social+icon-1320086084536018107_48.png"></span> </span>https://github.com/millies1919
+        </p>
+        <p class="copyright">Copyright MattIllies © 2019</p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script>
+        particlesJS.load('particles-js', 'particles.json', function() {
+            console.log('callback - particles-js config loaded');
+          });
+    </script>
+    <script type="text/javascript" src="index.js"></script>
+</body>
+</html>
